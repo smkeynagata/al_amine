@@ -4,12 +4,7 @@
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
-    "license": "MIT",
-    "config": {
-        "platform": {
-            "php": "8.2.27"
-        }
-    },
+"license": "MIT",
     "require": {
         "php": "^8.2",
         "barryvdh/laravel-dompdf": "^3.1",
@@ -88,6 +83,9 @@
         }
     },
     "config": {
+        "platform": {
+            "php": "8.2.27"
+        },
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
