@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repaire">
-      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.railwayignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.railwayignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/DEPLOIEMENT_OCTANE.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/DEPLOIEMENT_OCTANE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/nixpacks.toml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/nixpacks.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/public/health.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/health.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/railway.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/railway.json" afterDir="false" />
-    </list>
+    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repairee" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -268,7 +259,7 @@
       <workItem from="1766637714062" duration="1130000" />
       <workItem from="1766638870318" duration="6546000" />
       <workItem from="1766645614570" duration="39000" />
-      <workItem from="1766645686138" duration="2087000" />
+      <workItem from="1766645686138" duration="2395000" />
     </task>
     <task id="LOCAL-00001" summary="pro">
       <option name="closed" value="true" />
@@ -390,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766645950053</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="repairee">
+      <option name="closed" value="true" />
+      <created>1766647820072</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1766647820072</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,6 +399,7 @@
     <MESSAGE value="pro" />
     <MESSAGE value="repair" />
     <MESSAGE value="repaire" />
-    <option name="LAST_COMMIT_MESSAGE" value="repaire" />
+    <MESSAGE value="repairee" />
+    <option name="LAST_COMMIT_MESSAGE" value="repairee" />
   </component>
 </project>
