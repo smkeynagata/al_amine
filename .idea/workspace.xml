@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repaire">
+      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.railwayignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.railwayignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/DEPLOIEMENT_OCTANE.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/DEPLOIEMENT_OCTANE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/nixpacks.toml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/nixpacks.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/health.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/health.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/railway.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/railway.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +268,7 @@
       <workItem from="1766637714062" duration="1130000" />
       <workItem from="1766638870318" duration="6546000" />
       <workItem from="1766645614570" duration="39000" />
-      <workItem from="1766645686138" duration="684000" />
+      <workItem from="1766645686138" duration="2087000" />
     </task>
     <task id="LOCAL-00001" summary="pro">
       <option name="closed" value="true" />

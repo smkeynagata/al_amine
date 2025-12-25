@@ -16,4 +16,128 @@ cmds = [
 
 [start]
 cmd = 'php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
+[phases.setup]
+nixPkgs = ['php82', 'php82Packages.composer', 'nodejs_18', 'npm-9_x', 'postgresql']
+
+[phases.install]
+cmds = [
+    'composer install --ignore-platform-reqs',
+    'npm ci'
+]
+
+[phases.build]
+cmds = [
+    'composer install --no-dev --optimize-autoloader',
+    'npm install',
+    'npm run build'
+]
+
+[start]
+cmd = 'php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
+[phases.setup]
+nixPkgs = ['php82', 'php82Packages.composer', 'nodejs_18', 'npm-9_x', 'postgresql']
+
+[phases.install]
+cmds = [
+    'composer install --ignore-platform-reqs',
+    'npm ci'
+]
+
+[phases.build]
+cmds = [
+    'composer install --no-dev --optimize-autoloader',
+    'npm install',
+    'npm run build'
+]
+
+[start]
+cmd = 'php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
+[phases.setup]
+nixPkgs = ['php82', 'php82Packages.composer', 'nodejs_18', 'npm-9_x', 'postgresql']
+
+[phases.install]
+cmds = [
+    'composer install --ignore-platform-reqs',
+    'npm ci'
+]
+
+[phases.build]
+cmds = [
+    'composer install --no-dev --optimize-autoloader',
+    'npm install',
+    'npm run build'
+]
+
+[start]
+cmd = 'php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
+[phases.setup]
+nixPkgs = ['php82', 'php82Packages.composer', 'nodejs_18', 'npm-9_x', 'postgresql']
+
+[phases.install]
+cmds = [
+    'composer install --ignore-platform-reqs',
+    'npm ci'
+]
+
+[phases.build]
+cmds = [
+    'composer install --no-dev --optimize-autoloader',
+    'npm install',
+    'npm run build'
+]
+
+[start]
+cmd = 'php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
+[phases.setup]
+nixPkgs = ['php82', 'php82Packages.composer', 'nodejs_18', 'npm-9_x']
+
+[phases.install]
+cmds = [
+    'composer install --ignore-platform-reqs',
+    'npm ci'
+]
+[phases.setup]
+[phases.build]
+cmds = [
+    'composer install --no-dev --optimize-autoloader',
+    'npm install',
+    'npm run build'
+]
+
+[start]
+cmd = 'php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
+nixPkgs = ['php82', 'php82Packages.composer', 'nodejs_18', 'npm-9_x']
+
+[phases.install]
+cmds = [
+    'composer install --ignore-platform-reqs',
+    'npm ci'
+]
+[phases.setup]
+[phases.build]
+cmds = [
+    'composer install --no-dev --optimize-autoloader',
+    'npm install',
+    'npm run build'
+]
+
+[start]
+cmd = 'php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
+nixPkgs = ['php82', 'php82Packages.composer', 'nodejs_18', 'npm-9_x', 'postgresql']
+
+[phases.install]
+cmds = [
+    'composer install --ignore-platform-reqs',
+    'npm ci'
+]
+
+[phases.build]
+cmds = [
+    'composer install --no-dev --optimize-autoloader',
+    'npm install',
+    'npm run build'
+]
+
+[start]
+cmd = 'php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
 
