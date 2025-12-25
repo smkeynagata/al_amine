@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repair" />
+    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repair">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +32,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/smkeynagata/al_amine.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/smkeynagata/al_amine&quot;,
     &quot;accountId&quot;: &quot;45ee763e-adbc-40d5-a185-10e9cfbb024e&quot;
   }
 }</component>
@@ -254,7 +256,8 @@
       <updated>1766636247727</updated>
       <workItem from="1766636251210" duration="1380000" />
       <workItem from="1766637714062" duration="1130000" />
-      <workItem from="1766638870318" duration="990000" />
+      <workItem from="1766638870318" duration="6546000" />
+      <workItem from="1766645614570" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="pro">
       <option name="closed" value="true" />
@@ -312,7 +315,63 @@
       <option name="project" value="LOCAL" />
       <updated>1766639420701</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="repair">
+      <option name="closed" value="true" />
+      <created>1766640024508</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1766640024508</updated>
+    </task>
+    <task id="LOCAL-00009" summary="repair">
+      <option name="closed" value="true" />
+      <created>1766643480689</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1766643480689</updated>
+    </task>
+    <task id="LOCAL-00010" summary="repair">
+      <option name="closed" value="true" />
+      <created>1766643496375</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1766643496375</updated>
+    </task>
+    <task id="LOCAL-00011" summary="repair">
+      <option name="closed" value="true" />
+      <created>1766644416194</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1766644416195</updated>
+    </task>
+    <task id="LOCAL-00012" summary="repair">
+      <option name="closed" value="true" />
+      <created>1766644423151</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1766644423151</updated>
+    </task>
+    <task id="LOCAL-00013" summary="repair">
+      <option name="closed" value="true" />
+      <created>1766645208614</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1766645208614</updated>
+    </task>
+    <task id="LOCAL-00014" summary="repair">
+      <option name="closed" value="true" />
+      <created>1766645361289</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1766645361289</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
