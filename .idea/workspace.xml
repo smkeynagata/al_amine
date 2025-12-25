@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repaireeee" />
+    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repaireee">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -259,7 +261,7 @@
       <workItem from="1766637714062" duration="1130000" />
       <workItem from="1766638870318" duration="6546000" />
       <workItem from="1766645614570" duration="39000" />
-      <workItem from="1766645686138" duration="10065000" />
+      <workItem from="1766645686138" duration="10755000" />
     </task>
     <task id="LOCAL-00001" summary="pro">
       <option name="closed" value="true" />
@@ -477,7 +479,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766655646431</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="repaireee">
+      <option name="closed" value="true" />
+      <created>1766655807065</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1766655807065</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,8 +498,8 @@
     <MESSAGE value="repair" />
     <MESSAGE value="repaire" />
     <MESSAGE value="repairee" />
-    <MESSAGE value="repaireee" />
     <MESSAGE value="repaireeee" />
-    <option name="LAST_COMMIT_MESSAGE" value="repaireeee" />
+    <MESSAGE value="repaireee" />
+    <option name="LAST_COMMIT_MESSAGE" value="repaireee" />
   </component>
 </project>

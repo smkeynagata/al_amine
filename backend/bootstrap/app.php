@@ -12,10 +12,13 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        // Trust proxies for HTTPS detection (Railway, Heroku, etc.)
+        $middleware->trustProxies(at: '*');
+
         $middleware->alias([
             'role' => \App\Http\Middleware\CheckRole::class,
         ]);
-        
+
         // Exclure les routes PayDunya du CSRF pour les webhooks
         $middleware->validateCsrfTokens(except: [
             'paydunya/*',

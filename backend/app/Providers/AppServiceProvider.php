@@ -19,9 +19,20 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // Force HTTPS in production (Railway, etc.)
         if (config('app.env') === 'production') {
             \Illuminate\Support\Facades\URL::forceScheme('https');
+        }
 
+        // Trust all proxies (for Railway and other cloud platforms)
+        $this->app['request']->server->set('HTTPS', 'on');
+
+        // Configure trusted proxies for cloud platforms
+        if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+            \Illuminate\Support\Facades\URL::forceScheme('https');
+        }
+
+        if (config('app.env') === 'production') {
             // Configure Vite for production
             \Illuminate\Support\Facades\Vite::useScriptTagAttributes([
                 'defer' => true,
