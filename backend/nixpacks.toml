@@ -13,10 +13,14 @@ cmds = [
     'touch storage/framework/sessions/.gitkeep storage/framework/views/.gitkeep storage/framework/cache/.gitkeep storage/logs/.gitkeep',
     'chmod -R 777 storage bootstrap/cache',
     'php artisan storage:link || true',
+    'php artisan config:clear || true',
+    'php artisan cache:clear || true',
+    'php artisan view:clear || true',
     'php artisan view:cache',
-    'php artisan route:cache'
+    'php artisan route:cache',
+    'php artisan config:cache'
 ]
 
 [start]
-cmd = 'mkdir -p /app/storage/framework/sessions /app/storage/framework/views /app/storage/framework/cache/data /app/storage/logs /app/bootstrap/cache && chmod -R 777 /app/storage /app/bootstrap/cache && php artisan migrate --force && php artisan db:seed --force || true && php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
+cmd = 'mkdir -p /app/storage/framework/sessions /app/storage/framework/views /app/storage/framework/cache/data /app/storage/logs /app/bootstrap/cache && chmod -R 777 /app/storage /app/bootstrap/cache && php artisan config:clear && php artisan cache:clear && php artisan view:clear && php artisan migrate --force && php artisan db:seed --force || true && php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
 

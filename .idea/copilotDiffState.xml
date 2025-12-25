@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/backend/.gitignore">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/.gitignore" />
+              <option name="originalContent" value="*.log&#10;.DS_Store&#10;.env&#10;.env.backup&#10;.env.production&#10;.phpactor.json&#10;.phpunit.result.cache&#10;/.fleet&#10;/.idea&#10;/.nova&#10;/.phpunit.cache&#10;/.vscode&#10;/.zed&#10;/auth.json&#10;/node_modules&#10;/public/build&#10;/public/hot&#10;/public/storage&#10;/storage/*.key&#10;/storage/pail&#10;/vendor&#10;Homestead.json&#10;Homestead.yaml&#10;Thumbs.db&#10;&#10;**/caddy&#10;frankenphp&#10;frankenphp-worker.php&#10;" />
+              <option name="updatedContent" value="*.log&#10;.DS_Store&#10;.env&#10;.env.backup&#10;.env.production&#10;.phpactor.json&#10;.phpunit.result.cache&#10;/.fleet&#10;/.idea&#10;/.nova&#10;/.phpunit.cache&#10;/.vscode&#10;/.zed&#10;/auth.json&#10;/node_modules&#10;/public/hot&#10;/public/storage&#10;/storage/*.key&#10;/storage/pail&#10;/vendor&#10;Homestead.json&#10;Homestead.yaml&#10;Thumbs.db&#10;&#10;**/caddy&#10;frankenphp&#10;frankenphp-worker.php&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/nixpacks.toml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/nixpacks.toml" />
+              <option name="originalContent" value="[phases.setup]&#10;nixPkgs = ['php82', 'php82Packages.composer', 'php82Extensions.pdo', 'php82Extensions.pdo_pgsql', 'php82Extensions.mbstring', 'php82Extensions.xml', 'php82Extensions.curl', 'php82Extensions.zip', 'php82Extensions.gd', 'php82Extensions.bcmath', 'php82Extensions.intl', 'nodejs_18', 'npm-9_x', 'postgresql']&#10;&#10;[phases.install]&#10;cmds = [&#10;    'composer install --ignore-platform-reqs --no-scripts',&#10;    'npm install'&#10;]&#10;&#10;[phases.build]&#10;cmds = [&#10;    'composer install --no-dev --optimize-autoloader --ignore-platform-reqs',&#10;    'npm run build',&#10;    'mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache/data storage/logs bootstrap/cache',&#10;    'touch storage/framework/sessions/.gitkeep storage/framework/views/.gitkeep storage/framework/cache/.gitkeep storage/logs/.gitkeep',&#10;    'chmod -R 777 storage bootstrap/cache',&#10;    'php artisan storage:link || true',&#10;    'php artisan view:cache',&#10;    'php artisan route:cache'&#10;]&#10;&#10;[start]&#10;cmd = 'mkdir -p /app/storage/framework/sessions /app/storage/framework/views /app/storage/framework/cache/data /app/storage/logs /app/bootstrap/cache &amp;&amp; chmod -R 777 /app/storage /app/bootstrap/cache &amp;&amp; php artisan migrate --force &amp;&amp; php artisan db:seed --force || true &amp;&amp; php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'&#10;&#10;" />
+              <option name="updatedContent" value="[phases.setup]&#10;nixPkgs = ['php82', 'php82Packages.composer', 'php82Extensions.pdo', 'php82Extensions.pdo_pgsql', 'php82Extensions.mbstring', 'php82Extensions.xml', 'php82Extensions.curl', 'php82Extensions.zip', 'php82Extensions.gd', 'php82Extensions.bcmath', 'php82Extensions.intl', 'nodejs_18', 'npm-9_x', 'postgresql']&#10;&#10;[phases.install]&#10;cmds = [&#10;    'composer install --ignore-platform-reqs --no-scripts'&#10;]&#10;&#10;[phases.build]&#10;cmds = [&#10;    'composer install --no-dev --optimize-autoloader --ignore-platform-reqs',&#10;    'mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache/data storage/logs bootstrap/cache',&#10;    'touch storage/framework/sessions/.gitkeep storage/framework/views/.gitkeep storage/framework/cache/.gitkeep storage/logs/.gitkeep',&#10;    'chmod -R 777 storage bootstrap/cache',&#10;    'php artisan storage:link || true',&#10;    'php artisan view:cache',&#10;    'php artisan route:cache'&#10;]&#10;&#10;[start]&#10;cmd = 'mkdir -p /app/storage/framework/sessions /app/storage/framework/views /app/storage/framework/cache/data /app/storage/logs /app/bootstrap/cache &amp;&amp; chmod -R 777 /app/storage /app/bootstrap/cache &amp;&amp; php artisan migrate --force &amp;&amp; php artisan db:seed --force || true &amp;&amp; php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'&#10;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
