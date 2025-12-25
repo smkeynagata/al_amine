@@ -1,42 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+  <component name="LaravelPint">
+    <laravel_pint_settings>
+      <LaravelPintConfiguration tool_path="$PROJECT_DIR$/backend/vendor/bin/pint" />
+    </laravel_pint_settings>
   </component>
-  <component name="ChangeListManager">
-    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repaire">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="ComposerSettings" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/backend/composer.json</pharConfigPath>
-    <execution />
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="ass-super" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;cheikhx007-oss&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/smkeynagata/al_amine&quot;,
-    &quot;accountId&quot;: &quot;45ee763e-adbc-40d5-a185-10e9cfbb024e&quot;
-  }
-}</component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/bin/php">
+  <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/backend/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/backend/vendor/ratchet/rfc6455" />
@@ -211,188 +190,16 @@
       <path value="$PROJECT_DIR$/backend/vendor/symfony/psr-http-message-bridge" />
     </include_path>
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="37K01uOOkppPCrAhWyJBZofNbbp" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/asspro/Documents/al_amine&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RunManager">
-    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner configuration_file="$PROJECT_DIR$/backend/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
-      <method v="2" />
-    </configuration>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/backend/phpunit.xml" custom_loader_path="$PROJECT_DIR$/backend/vendor/autoload.php" use_configuration_file="true" />
+    </phpunit_settings>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PS-251.25410.148" />
-        <option value="bundled-php-predefined-a98d8de5180a-c5828cf854d9-com.jetbrains.php.sharedIndexes-PS-251.25410.148" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="" />
-      <created>1766636247727</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1766636247727</updated>
-      <workItem from="1766636251210" duration="1380000" />
-      <workItem from="1766637714062" duration="1130000" />
-      <workItem from="1766638870318" duration="6546000" />
-      <workItem from="1766645614570" duration="39000" />
-      <workItem from="1766645686138" duration="684000" />
-    </task>
-    <task id="LOCAL-00001" summary="pro">
-      <option name="closed" value="true" />
-      <created>1766636578998</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1766636578999</updated>
-    </task>
-    <task id="LOCAL-00002" summary="pro">
-      <option name="closed" value="true" />
-      <created>1766636837373</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1766636837373</updated>
-    </task>
-    <task id="LOCAL-00003" summary="pro">
-      <option name="closed" value="true" />
-      <created>1766638395335</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1766638395335</updated>
-    </task>
-    <task id="LOCAL-00004" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766638972547</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1766638972547</updated>
-    </task>
-    <task id="LOCAL-00005" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766639302556</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1766639302556</updated>
-    </task>
-    <task id="LOCAL-00006" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766639328043</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1766639328043</updated>
-    </task>
-    <task id="LOCAL-00007" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766639420701</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1766639420701</updated>
-    </task>
-    <task id="LOCAL-00008" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766640024508</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1766640024508</updated>
-    </task>
-    <task id="LOCAL-00009" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766643480689</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1766643480689</updated>
-    </task>
-    <task id="LOCAL-00010" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766643496375</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1766643496375</updated>
-    </task>
-    <task id="LOCAL-00011" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766644416194</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1766644416195</updated>
-    </task>
-    <task id="LOCAL-00012" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766644423151</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1766644423151</updated>
-    </task>
-    <task id="LOCAL-00013" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766645208614</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1766645208614</updated>
-    </task>
-    <task id="LOCAL-00014" summary="repair">
-      <option name="closed" value="true" />
-      <created>1766645361289</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1766645361289</updated>
-    </task>
-    <task id="LOCAL-00015" summary="repaire">
-      <option name="closed" value="true" />
-      <created>1766645950053</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1766645950053</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="pro" />
-    <MESSAGE value="repair" />
-    <MESSAGE value="repaire" />
-    <option name="LAST_COMMIT_MESSAGE" value="repaire" />
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
 </project>
