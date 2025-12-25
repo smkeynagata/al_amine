@@ -19,13 +19,21 @@ use App\Http\Controllers\Api\Secretaire\FileAttenteController as SecretaireFileA
 |--------------------------------------------------------------------------
 */
 
+// ========== HEALTHCHECK ROUTE ==========
+Route::get('/health', function () {
+    return response()->json([
+        'status' => 'ok',
+        'timestamp' => now()->toIso8601String()
+    ]);
+});
+
 // ========== PUBLIC ROUTES ==========
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
 
 // ========== PROTECTED ROUTES ==========
 Route::middleware('auth:sanctum')->group(function () {
-    
+
     // Auth
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/user', function (Request $request) {
@@ -34,7 +42,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // ========== PATIENT ROUTES (10 Controllers) ==========
     Route::prefix('patient')->middleware('role:PATIENT')->group(function () {
-        
+
         // Dashboard (10 methods)
         Route::get('/dashboard/stats', [PatientDashboardController::class, 'stats']);
         Route::get('/appointments/upcoming', [PatientDashboardController::class, 'upcomingAppointments']);
@@ -48,7 +56,7 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('/invoices/{facture}', [PatientDashboardController::class, 'showFacture']);
         Route::get('/invoices/{facture}/payment', [PatientDashboardController::class, 'paiement']);
         Route::post('/invoices/{facture}/payment', [PatientDashboardController::class, 'traiterPaiement']);
-        
+
         // Profile (7 methods)
         Route::get('/profile', [PatientProfileController::class, 'show']);
         Route::put('/profile/personal-info', [PatientProfileController::class, 'updatePersonalInfo']);
@@ -57,13 +65,13 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('/profile/photo', [PatientProfileController::class, 'updatePhoto']);
         Route::delete('/profile/photo', [PatientProfileController::class, 'deletePhoto']);
         Route::put('/profile/password', [PatientProfileController::class, 'updatePassword']);
-        
+
         // Demande RDV (4 methods)
         Route::get('/appointment-requests', [PatientDemandeRdvController::class, 'index']);
         Route::get('/appointment-requests/specialites', [PatientDemandeRdvController::class, 'getSpecialites']);
         Route::post('/appointment-requests', [PatientDemandeRdvController::class, 'store']);
         Route::get('/appointment-requests/praticiens/{specialiteId}', [PatientDemandeRdvController::class, 'getPraticiensBySpecialite']);
-        
+
         // Documents (6 methods)
         Route::get('/documents', [PatientDocumentController::class, 'index']);
         Route::get('/documents/{document}/download', [PatientDocumentController::class, 'downloadDocument']);
@@ -71,14 +79,14 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('/documents/examens/{examen}/download', [PatientDocumentController::class, 'downloadExamen']);
         Route::post('/documents/certificat', [PatientDocumentController::class, 'generateCertificat']);
         Route::get('/documents/attestation/{consultationId}', [PatientDocumentController::class, 'generateAttestation']);
-        
+
         // Dossier Medical (5 methods)
         Route::get('/medical-record', [PatientDossierMedicalController::class, 'index']);
         Route::get('/medical-record/consultations/{consultation}', [PatientDossierMedicalController::class, 'showConsultation']);
         Route::get('/medical-record/ordonnances/{ordonnance}/download', [PatientDossierMedicalController::class, 'downloadOrdonnance']);
         Route::get('/medical-record/examens/{examen}/download', [PatientDossierMedicalController::class, 'downloadExamen']);
         Route::put('/medical-record/allergies-antecedents', [PatientDossierMedicalController::class, 'updateAllergiesAntecedents']);
-        
+
         // Notifications
         Route::get('/notifications', function (Request $request) {
             return response()->json(['notifications' => $request->user()->notifications]);
@@ -95,7 +103,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // ========== PRATICIEN ROUTES (7 Controllers) ==========
     Route::prefix('praticien')->middleware('role:PRATICIEN')->group(function () {
-        
+
         // Dashboard (10 methods)
         Route::get('/dashboard/stats', [PraticienDashboardController::class, 'stats']);
         Route::get('/appointments/today', [PraticienDashboardController::class, 'rdvAujourdhui']);
@@ -108,7 +116,7 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('/patients/{patient}/dossier', [PraticienDashboardController::class, 'dossierPatient']);
         Route::get('/documents', [PraticienDashboardController::class, 'documents']);
         Route::get('/profile/stats', [PraticienDashboardController::class, 'profileStats']);
-        
+
         // Consultations (4 methods)
         Route::get('/consultations', [PraticienConsultationController::class, 'index']);
         Route::get('/consultations/rdv/{rendezVous}', [PraticienConsultationController::class, 'show']);
@@ -118,7 +126,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // ========== SECRETAIRE ROUTES (8 Controllers) ==========
     Route::prefix('secretaire')->middleware('role:SECRETAIRE')->group(function () {
-        
+
         // Dashboard (13 methods)
         Route::get('/dashboard/stats', [SecretaireDashboardController::class, 'stats']);
         Route::get('/appointment-requests/pending', [SecretaireDashboardController::class, 'demandesRecentes']);
@@ -135,7 +143,7 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('/billing/invoices/{consultation}', [SecretaireDashboardController::class, 'storeFacture']);
         Route::get('/payments/stats', [SecretaireDashboardController::class, 'encaissementsStats']);
         Route::get('/payments', [SecretaireDashboardController::class, 'encaissements']);
-        
+
         // File Attente (3 methods)
         Route::get('/queue', [SecretaireFileAttenteController::class, 'index']);
         Route::post('/queue/{demandeRdv}/validate', [SecretaireFileAttenteController::class, 'valider']);

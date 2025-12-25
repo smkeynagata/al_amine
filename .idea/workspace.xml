@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repair">
-      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
-    </list>
+    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repair" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -256,7 +254,7 @@
       <updated>1766636247727</updated>
       <workItem from="1766636251210" duration="1380000" />
       <workItem from="1766637714062" duration="1130000" />
-      <workItem from="1766638870318" duration="434000" />
+      <workItem from="1766638870318" duration="990000" />
     </task>
     <task id="LOCAL-00001" summary="pro">
       <option name="closed" value="true" />
@@ -298,7 +296,23 @@
       <option name="project" value="LOCAL" />
       <updated>1766639302556</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="repair">
+      <option name="closed" value="true" />
+      <created>1766639328043</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1766639328043</updated>
+    </task>
+    <task id="LOCAL-00007" summary="repair">
+      <option name="closed" value="true" />
+      <created>1766639420701</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766639420701</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
