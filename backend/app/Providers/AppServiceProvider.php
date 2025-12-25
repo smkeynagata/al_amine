@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -20,9 +19,22 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Forcer HTTPS en production
         if (config('app.env') === 'production') {
-            URL::forceScheme('https');
+            \Illuminate\Support\Facades\URL::forceScheme('https');
+
+            // Configure Vite for production
+            \Illuminate\Support\Facades\Vite::useScriptTagAttributes([
+                'defer' => true,
+            ]);
+
+            // Add preloading for critical assets
+            \Illuminate\Support\Facades\Vite::usePreloadTag();
+
+            // Add Content Security Policy nonce
+            \Illuminate\Support\Facades\Vite::useCspNonce();
+
+            // Make sure asset URLs are absolute
+            \Illuminate\Support\Facades\Vite::useAbsoluteAssetPaths();
         }
     }
 }
