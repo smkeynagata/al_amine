@@ -1,0 +1,56 @@
+name: Deploy to Railway
+
+on:
+  push:
+    branches: [ main, ass-super ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: pdo, pgsql, mbstring, xml, bcmath
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Composer dependencies
+        run: composer install --no-dev --optimize-autoloader --prefer-dist --no-scripts
+
+      - name: Generate autoload files
+        run: composer dump-autoload --optimize
+        env:
+          BROADCAST_CONNECTION: log
+          REVERB_APP_KEY: placeholder
+          REVERB_APP_SECRET: placeholder
+          REVERB_APP_ID: placeholder
+
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Build assets
+        run: npm run build
+
+      - name: Install Railway CLI
+        run: npm i -g @railway/cli
+
+      - name: Deploy to Railway
+        run: railway up --detach
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+
+
