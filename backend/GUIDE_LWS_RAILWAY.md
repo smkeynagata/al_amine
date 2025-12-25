@@ -44,9 +44,9 @@ Remplissez le formulaire sur LWS comme suit :
 Après enregistrement, vous devriez voir une nouvelle ligne dans votre Zone DNS :
 
 ```
-Type    Nom/Sous-domaine    Valeur/Cible                          TTL
-──────────────────────────────────────────────────────────────────────
-CNAME   api                 alamine-production.up.railway.app     3600
+Type    Nom/Sous-domaine    Valeur/Cible                TTL
+────────────────────────────────────────────────────────────
+CNAME   api                 43fmkiyn.up.railway.app     3600
 ```
 
 ## 🚀 Ensuite : Configuration sur Railway
@@ -114,7 +114,7 @@ Si votre domaine LWS est **`clinique-alamine.com`** :
 ```
 Type: CNAME
 Nom: api
-Valeur: alamine-production.up.railway.app
+Valeur: 43fmkiyn.up.railway.app
 TTL: 3600
 ```
 
