@@ -12,22 +12,30 @@ Vous allez voir une liste de vos enregistrements DNS actuels. Cherchez le bouton
 
 ### 3️⃣ Ajouter l'enregistrement CNAME
 
-Remplissez le formulaire comme suit :
+⚠️ **IMPORTANT : Utilisez EXACTEMENT la valeur fournie par Railway !**
+
+Railway vous a donné cette valeur : **`43fmkiyn.up.railway.app`**
+
+Remplissez le formulaire sur LWS comme suit :
 
 ```
 ┌─────────────────────────────────────────────┐
 │ Type d'enregistrement : CNAME               │
 ├─────────────────────────────────────────────┤
-│ Nom (ou Sous-domaine) : api                 │
-│  (ou alamine, backend, app, etc.)           │
+│ Nom (ou Sous-domaine) :                     │
+│  - Pour un sous-domaine : api               │
+│  - Pour domaine racine : @ ou www           │
 ├─────────────────────────────────────────────┤
 │ Valeur (ou Cible) :                         │
-│  alamine-production.up.railway.app          │
+│  43fmkiyn.up.railway.app                    │
+│  ⚠️ COPIEZ EXACTEMENT cette valeur          │
 ├─────────────────────────────────────────────┤
 │ TTL : 3600                                  │
 │  (ou laisser la valeur par défaut)          │
 └─────────────────────────────────────────────┘
 ```
+
+📝 **Note** : Railway génère une valeur unique pour chaque projet. N'utilisez PAS `alamine-production.up.railway.app`, utilisez **`43fmkiyn.up.railway.app`** comme indiqué sur votre écran Railway.
 
 ### 4️⃣ Cliquez sur "Enregistrer" ou "Ajouter"
 
