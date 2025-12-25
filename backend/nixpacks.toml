@@ -17,5 +17,5 @@ cmds = [
 ]
 
 [start]
-cmd = 'php artisan migrate --force && php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
+cmd = 'php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
 
