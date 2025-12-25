@@ -11,18 +11,14 @@ cmds = [
 cmds = [
     'composer install --no-dev --optimize-autoloader --ignore-platform-reqs',
     'npm run build',
-    'mkdir -p storage/framework/sessions',
-    'mkdir -p storage/framework/views',
-    'mkdir -p storage/framework/cache',
-    'mkdir -p storage/logs',
-    'mkdir -p bootstrap/cache',
-    'chmod -R 775 storage bootstrap/cache',
+    'mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache/data storage/logs bootstrap/cache',
+    'touch storage/framework/sessions/.gitkeep storage/framework/views/.gitkeep storage/framework/cache/.gitkeep storage/logs/.gitkeep',
+    'chmod -R 777 storage bootstrap/cache',
     'php artisan storage:link || true',
-    'php artisan config:cache',
-    'php artisan route:cache',
-    'php artisan view:cache'
+    'php artisan view:cache',
+    'php artisan route:cache'
 ]
 
 [start]
-cmd = 'mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache storage/logs bootstrap/cache && chmod -R 775 storage bootstrap/cache && php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
+cmd = 'mkdir -p /app/storage/framework/sessions /app/storage/framework/views /app/storage/framework/cache/data /app/storage/logs /app/bootstrap/cache && chmod -R 777 /app/storage /app/bootstrap/cache && php artisan octane:frankenphp --host=0.0.0.0 --port=$PORT --max-requests=500'
 
