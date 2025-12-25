@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repaireee">
+    <list default="true" id="8a09f02c-0da8-4d40-a39f-3da3461f76e6" name="Changes" comment="repaireeee">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/nixpacks.toml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/nixpacks.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +261,7 @@
       <workItem from="1766637714062" duration="1130000" />
       <workItem from="1766638870318" duration="6546000" />
       <workItem from="1766645614570" duration="39000" />
-      <workItem from="1766645686138" duration="7140000" />
+      <workItem from="1766645686138" duration="8057000" />
     </task>
     <task id="LOCAL-00001" summary="pro">
       <option name="closed" value="true" />
@@ -448,7 +447,23 @@
       <option name="project" value="LOCAL" />
       <updated>1766652624424</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="repaireeee">
+      <option name="closed" value="true" />
+      <created>1766652899878</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1766652899878</updated>
+    </task>
+    <task id="LOCAL-00025" summary="repaireeee">
+      <option name="closed" value="true" />
+      <created>1766653335248</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1766653335248</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,6 +475,7 @@
     <MESSAGE value="repaire" />
     <MESSAGE value="repairee" />
     <MESSAGE value="repaireee" />
-    <option name="LAST_COMMIT_MESSAGE" value="repaireee" />
+    <MESSAGE value="repaireeee" />
+    <option name="LAST_COMMIT_MESSAGE" value="repaireeee" />
   </component>
 </project>
