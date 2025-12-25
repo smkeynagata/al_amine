@@ -15,60 +15,83 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         // ADMIN
-        User::create([
-            'name' => 'DIOP',
-            'prenom' => 'Amadou',
-            'email' => 'admin@alamine.sn',
-            'password' => Hash::make('password'),
-            'date_naissance' => '1975-03-15',
-            'sexe' => 'M',
-            'numero_cni' => '1234567890123',
-            'telephone' => '771234567',
-            'adresse' => 'Rue 10, Angle Boulevard',
-            'quartier' => 'Plateau',
-            'ville' => 'Dakar',
-            'role' => 'ADMIN',
-            'statut_compte' => 'ACTIF',
-        ]);
+        User::updateOrCreate(
+            ['email' => 'admin@alamine.sn'],
+            [
+                'name' => 'DIOP',
+                'prenom' => 'Amadou',
+                'password' => Hash::make('password'),
+                'date_naissance' => '1975-03-15',
+                'sexe' => 'M',
+                'numero_cni' => '1234567890123',
+                'telephone' => '771234567',
+                'adresse' => 'Rue 10, Angle Boulevard',
+                'quartier' => 'Plateau',
+                'ville' => 'Dakar',
+                'role' => 'ADMIN',
+                'statut_compte' => 'ACTIF',
+            ]
+        );
+
+        // ADMIN PRO
+        User::updateOrCreate(
+            ['email' => 'pro@alamine.sn'],
+            [
+                'name' => 'Al-Amine',
+                'prenom' => 'Admin',
+                'password' => Hash::make('password'),
+                'date_naissance' => '1980-01-01',
+                'sexe' => 'M',
+                'numero_cni' => '1234567890124',
+                'telephone' => '771234568',
+                'adresse' => 'Centre Al-Amine',
+                'quartier' => 'Plateau',
+                'ville' => 'Dakar',
+                'role' => 'ADMIN',
+                'statut_compte' => 'ACTIF',
+            ]
+        );
 
         // SECRÉTAIRES
-        $secretaire1 = User::create([
-            'name' => 'FALL',
-            'prenom' => 'Aïssatou',
-            'email' => 'secretaire1@alamine.sn',
-            'password' => Hash::make('password'),
-            'date_naissance' => '1990-07-20',
-            'sexe' => 'F',
-            'numero_cni' => '2345678901234',
-            'telephone' => '772345678',
-            'adresse' => 'Cité Keur Gorgui',
-            'quartier' => 'Mermoz',
-            'ville' => 'Dakar',
-            'role' => 'SECRETAIRE',
-            'statut_compte' => 'ACTIF',
-        ]);
-        Secretaire::create([
-            'user_id' => $secretaire1->id,
+        $secretaire1 = User::updateOrCreate(
+            ['email' => 'secretaire1@alamine.sn'],
+            [
+                'name' => 'FALL',
+                'prenom' => 'Aïssatou',
+                'password' => Hash::make('password'),
+                'date_naissance' => '1990-07-20',
+                'sexe' => 'F',
+                'numero_cni' => '2345678901234',
+                'telephone' => '772345678',
+                'adresse' => 'Cité Keur Gorgui',
+                'quartier' => 'Mermoz',
+                'ville' => 'Dakar',
+                'role' => 'SECRETAIRE',
+                'statut_compte' => 'ACTIF',
+            ]
+        );
+        Secretaire::updateOrCreate(['user_id' => $secretaire1->id], [
             'matricule' => 'SEC001',
         ]);
 
-        $secretaire2 = User::create([
-            'name' => 'SARR',
-            'prenom' => 'Fatou',
-            'email' => 'secretaire2@alamine.sn',
-            'password' => Hash::make('password'),
-            'date_naissance' => '1992-11-12',
-            'sexe' => 'F',
-            'numero_cni' => '3456789012345',
-            'telephone' => '773456789',
-            'adresse' => 'Parcelles U25',
-            'quartier' => 'Parcelles Assainies',
-            'ville' => 'Dakar',
-            'role' => 'SECRETAIRE',
-            'statut_compte' => 'ACTIF',
-        ]);
-        Secretaire::create([
-            'user_id' => $secretaire2->id,
+        $secretaire2 = User::updateOrCreate(
+            ['email' => 'secretaire2@alamine.sn'],
+            [
+                'name' => 'SARR',
+                'prenom' => 'Fatou',
+                'password' => Hash::make('password'),
+                'date_naissance' => '1992-11-12',
+                'sexe' => 'F',
+                'numero_cni' => '3456789012345',
+                'telephone' => '773456789',
+                'adresse' => 'Parcelles U25',
+                'quartier' => 'Parcelles Assainies',
+                'ville' => 'Dakar',
+                'role' => 'SECRETAIRE',
+                'statut_compte' => 'ACTIF',
+            ]
+        );
+        Secretaire::updateOrCreate(['user_id' => $secretaire2->id], [
             'matricule' => 'SEC002',
         ]);
 
